@@ -27,6 +27,12 @@ namespace Gladys_Itics_2020
                         Console.WriteLine("Fin Aplicación");
                         Thread.Sleep(3000);
                         break;
+                    case 1:
+                        Console.WriteLine("Por favor ingrese el Nombre de la Serie:");
+                        nombre = Console.ReadLine();
+                        Console.WriteLine("Por favor ingrese una descripción para esta serie:");
+                        descripcion = Console.ReadLine();
+                        break;
                     default:
                         break;
                 }
