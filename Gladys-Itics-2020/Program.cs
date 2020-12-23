@@ -32,6 +32,22 @@ namespace Gladys_Itics_2020
                         nombre = Console.ReadLine();
                         Console.WriteLine("Por favor ingrese una descripción para esta serie:");
                         descripcion = Console.ReadLine();
+                        Console.WriteLine($"Serie ingresada con Exito: {series.TryAdd(nombre,descripcion)}");
+                        break;
+                    case 2:
+                        if (series!= null)
+                        {
+                            foreach (var item in series.Keys)
+                            {
+                                Console.WriteLine(item);
+                            }
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Actualmente no hay Series Archivadas");
+                            Thread.Sleep(5000);
+                        }
                         break;
                     default:
                         break;
