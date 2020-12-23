@@ -33,6 +33,16 @@ namespace Gladys_Itics_2020
                         Console.WriteLine("Por favor ingrese una descripción para esta serie:");
                         descripcion = Console.ReadLine();
                         break;
+                    case 2:
+                        if (series != null)
+                        {
+                            Console.WriteLine("Por favor ingrese la Serie que desea Consultar");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No hay Series en archivo");
+                        }
+                        break;
                     default:
                         break;
                 }
