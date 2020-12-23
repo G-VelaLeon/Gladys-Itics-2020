@@ -11,7 +11,15 @@ namespace Gladys_Itics_2020
             Console.WriteLine("Registro de Series Televisivas");
             Dictionary<string, string> series = new Dictionary<string, string>();
             int opcion; string nombre; string descripcion;
-            //Menú de Selección
+            do
+            {
+                opcion = int.Parse(Console.ReadLine());
+                switch (opcion)
+                {
+                    default:
+                        break;
+                }
+            } while (opcion != 0) ;
             Console.WriteLine("Fin del Proyecto");
         }
     }
