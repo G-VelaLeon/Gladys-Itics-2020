@@ -33,6 +33,7 @@ namespace Gladys_Itics_2020
                         Console.WriteLine("Por favor ingrese una descripción para esta serie:");
                         descripcion = Console.ReadLine();
                         break;
+<<<<<<< HEAD
                     case 2:
                         if (series != null)
                         {
@@ -43,6 +44,8 @@ namespace Gladys_Itics_2020
                             Console.WriteLine("No hay Series en archivo");
                         }
                         break;
+=======
+>>>>>>> 38b2230 (Opción de ingreso de nueva serie.)
                     default:
                         break;
                 }
