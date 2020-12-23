@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Gladys_Itics_2020
 {
@@ -22,6 +23,10 @@ namespace Gladys_Itics_2020
                 opcion = int.Parse(Console.ReadLine());
                 switch (opcion)
                 {
+                    case 0:
+                        Console.WriteLine("Fin Aplicación");
+                        Thread.Sleep(3000);
+                        break;
                     default:
                         break;
                 }
