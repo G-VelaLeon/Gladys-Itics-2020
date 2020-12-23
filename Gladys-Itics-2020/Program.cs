@@ -35,12 +35,16 @@ namespace Gladys_Itics_2020
                         Console.WriteLine($"Serie ingresada con Exito: {series.TryAdd(nombre,descripcion)}");
                         break;
                     case 2:
-                        if (series!= null)
+                        if (series != null)
                         {
                             foreach (var item in series.Keys)
                             {
                                 Console.WriteLine(item);
                             }
+                            Console.WriteLine("Por favor ingrese la Serie que desea Consultar");
+                            nombre = Console.ReadLine();
+                            Console.WriteLine();
+                            Console.WriteLine(series[nombre]);
                             Console.ReadKey();
                         }
                         else
@@ -50,6 +54,8 @@ namespace Gladys_Itics_2020
                         }
                         break;
                     default:
+                        Console.WriteLine("La opción ingresada no es valida");
+                        Thread.Sleep(5000);
                         break;
                 }
             } while (opcion != 0) ;
