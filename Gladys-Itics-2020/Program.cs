@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Gladys_Itics_2020
 {
@@ -8,8 +9,8 @@ namespace Gladys_Itics_2020
         {
             Console.WriteLine("Parte Inicial del Proyecto");
             Console.WriteLine("Registro de Series Televisivas");
-            //Crear Diccionario
-            //Variables
+            Dictionary<string, string> series = new Dictionary<string, string>();
+            int opcion; string nombre; string descripcion;
             //Menú de Selección
             Console.WriteLine("Fin del Proyecto");
         }
