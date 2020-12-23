@@ -33,20 +33,22 @@ namespace Gladys_Itics_2020
                         Console.WriteLine("Por favor ingrese una descripción para esta serie:");
                         descripcion = Console.ReadLine();
                         break;
-<<<<<<< HEAD
                     case 2:
                         if (series != null)
                         {
                             Console.WriteLine("Por favor ingrese la Serie que desea Consultar");
+                            nombre = Console.ReadLine();
+                            Console.WriteLine();
+                            Console.WriteLine(series[nombre]);
                         }
                         else
                         {
                             Console.WriteLine("No hay Series en archivo");
                         }
                         break;
-=======
->>>>>>> 38b2230 (Opción de ingreso de nueva serie.)
                     default:
+                        Console.WriteLine("La opción ingresada no es valida");
+                        Thread.Sleep(5000);
                         break;
                 }
             } while (opcion != 0) ;
